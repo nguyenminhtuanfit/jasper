@@ -1,0 +1,24 @@
+{
+  "employees": [
+    {
+      "fullname":"John Stark",
+      "employeeid":"29388282773",
+      "phone":"415-293-2928"
+    },
+    {
+      "fullname":"Mike Goodmann",
+      "employeeid":"2938828282",
+      "phone":"415-293-2726"
+    },
+    {
+      "fullname":"David Simpson",
+      "employeeid":"2938822837",
+      "phone":"415-293-9826"
+    },
+    {
+      "fullname":"Chris Humpty",
+      "employeeid":"2938275452",
+      "phone":"415-293-1122"
+    }
+  ]
+}

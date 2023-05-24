@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.1.0.final using JasperReports Library version 6.4.3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="testreport" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+<!--    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="testdata"/>-->
+    <property name="net.sf.jasperreports.json.source" value="a.json"/>
+    <queryString language="json">
+        <![CDATA[employees]]>
+    </queryString>
+    <field name="fullname" class="java.lang.String">
+        <property name="net.sf.jasperreports.json.field.expression" value="fullname"/>
+        <fieldDescription><![CDATA[fullname]]></fieldDescription>
+    </field>
+    <field name="employeeid" class="java.lang.Long">
+        <property name="net.sf.jasperreports.json.field.expression" value="employeeid"/>
+        <fieldDescription><![CDATA[employeeid]]></fieldDescription>
+    </field>
+    <field name="phone" class="java.lang.String">
+        <property name="net.sf.jasperreports.json.field.expression" value="phone"/>
+        <fieldDescription><![CDATA[phone]]></fieldDescription>
+    </field>
+    <title>
+        <band height="79" splitType="Stretch">
+            <staticText>
+                <reportElement x="240" y="24" width="280" height="30" />
+                <text><![CDATA[Employee List]]></text>
+            </staticText>
+        </band>
+    </title>
+    <columnHeader>
+        <band height="65" splitType="Stretch">
+            <staticText>
+                <reportElement x="30" y="30" width="180" height="30" />
+                <text><![CDATA[Full Name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="240" y="30" width="160" height="30" />
+                <text><![CDATA[Employee Id]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="430" y="30" width="180" height="30" />
+                <text><![CDATA[Phone Number]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="299" y="0" width="100" height="30" />
+                <text><![CDATA[employeeid]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="468" y="0" width="100" height="30" />
+                <text><![CDATA[phone]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="24" splitType="Stretch">
+            <textField>
+                <reportElement x="30" y="0" width="180" height="20" />
+                <textFieldExpression><![CDATA[$F{fullname}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="241" y="0" width="159" height="20" />
+                <textFieldExpression><![CDATA[$F{employeeid}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="430" y="0" width="180" height="20" />
+                <textFieldExpression><![CDATA[$F{phone}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+</jasperReport>
